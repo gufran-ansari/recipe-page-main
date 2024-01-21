@@ -1,0 +1,131 @@
+:root {
+
+	/* Colors */
+	--clr-nutmeg: hsl(14, 45%, 36%);
+	--clr-dark-raspberry: hsl(332, 51%, 32%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-rose-white: hsl(330, 100%, 98%);
+	--clr-eggshell: hsl(29, 53%, 90%);
+	--clr-light-grey: hsl(30, 18%, 87%);
+	--clr-wenge-brown: hsl(30, 10%, 34%);
+	--clr-dark-charcoal: hsl(24, 5%, 18%);
+
+	/* Font Family */
+	--ff-young: 'Young Serif', serif;
+	--ff-outfit: 'Outfit', sans-serif;
+
+	--fw-young: 400;
+	--fw-outfit-400: 400;
+	--fw-outfit-600: 600;
+	--fw-outfit-700: 700;
+
+	/* Font Size */
+	--fs-p: 1rem;
+
+	/* Screensiz */
+	--mobile: 375px;
+	--desktop: 1440px;
+}
+
+body {
+	min-width: 100%;
+	background-color: var(--clr-eggshell);
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--desktop);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+	padding: 10% 0;
+}
+
+.card {
+	max-width: 75%;
+	background-color: var(--clr-white);
+	border: 0;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+
+img {
+	border-radius: 1rem;
+	width: 100%;
+}
+
+h1 {
+	font-family: var(--ff-young);
+	font-weight: var(--fw-young);
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: var(--ff-young);
+	color: var(--clr-dark-raspberry);
+	font-size: 1.5rem;
+}
+
+p,
+li,
+tr {
+	font-family: var(--ff-outfit);
+	font-size: var(--fs-p);
+	color: var(--clr-wenge-brown);
+	line-height: 1.35;
+}
+
+li {
+	padding: .25rem 0;
+}
+
+.numbers {
+	color: var(--clr-dark-raspberry);
+	padding: 0 0.6rem;
+}
+
+hr {
+	color: var(--clr-light-grey);
+}
+
+.prep-time {
+	padding: 1rem 1.25rem;
+	border-radius: 1rem;
+	background-color: var(--clr-rose-white);
+}
+
+.prep-time h2 {
+	font-family: var(--ff-outfit);
+	font-size: 1.25rem;
+}
+
+.nutrition {
+	min-width: 100%;
+}
+
+tbody {
+	padding: 0 1rem;
+}
+
+td {
+	width: 10%;
+	padding: 0.5rem 2rem;
+	border-bottom: 1px solid var(--clr-light-grey);
+}
+
+.value {
+	color: var(--clr-dark-raspberry);
+	font-weight: var(--fw-outfit-700);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
